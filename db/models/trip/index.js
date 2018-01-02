@@ -11,9 +11,8 @@ export default (sequelize, Sequelize) => {
     relationship: Sequelize.STRING,
     publicId: Sequelize.STRING,
     trip_status: Sequelize.STRING,
-    publicId: Sequelize.STRING,
   }, {
-    timestamps: false,
+    timestamps: true,
   });
   return Trip;
 };
